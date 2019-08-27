@@ -5,6 +5,8 @@ export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
+
+        {/* Search bar */}
         <View style={{ flex: 1 }}>
           <View style={{marginHorizontal: 17, flexDirection:'row', paddingTop: 20}}>
             <View style={{position: 'relative', flex:1}}>
@@ -16,6 +18,8 @@ export default class App extends Component {
             </View>
           </View>
         </View>
+
+        {/* Navbar */}
         <View style={{ height: 54, flexDirection: 'row' }}>
           <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: 'white' }}>
             <Image style={{ width: 26, height: 26 }} source={require('./assets/home-active.png')} />
@@ -37,6 +41,7 @@ export default class App extends Component {
             <Text style={{ color: '#545454', fontSize: 10, marginTop: 4 }}>Account</Text>
           </View>
         </View >
+
       </View >
     );
   }
