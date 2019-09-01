@@ -96,27 +96,50 @@ export default class App extends Component {
               </View>
             </View>
           </View>
-          <View style={{ height: 17, backgroundColor: '#f2f2f4', marginTop: 20 }}></View>
+          <View style={{ height: 17, backgroundColor: '#f2f2f4', }}></View>
           {/* News Section */}
           <View style={{ paddingTop: 16, paddingHorizontal: 16 }}>
             <View style={{ position: 'relative' }}>
               <Image source={require('./assets/sepak-bola.jpg')} style={{ height: 170, width: '100%', borderRadius: 6 }} />
               <View style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.2, borderRadius: 6 }}></View>
               <View style={{ height: 15, width: 55, position: 'absolute', top: 16, left: 16 }}>
-              <Image source={require('./assets/white.png')} style={{ width: undefined, height: undefined, resizeMode: 'contain', flex: 1 }} />
+                <Image source={require('./assets/white.png')} style={{ width: undefined, height: undefined, resizeMode: 'contain', flex: 1 }} />
               </View>
             </View>
-            <View style={{ paddingTop: 16, paddingBottom: 20, borderBottomColor:'#e8e9ed', borderBottomWidth:1, marginBottom: 20 }}>
+            <View style={{ paddingTop: 16, paddingBottom: 20, borderBottomColor: '#e8e9ed', borderBottomWidth: 1, marginBottom: 20 }}>
               <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c' }}>GO-NEWS</Text>
               <Text style={{ fontSize: 14, fontWeight: 'normal', color: '#7a7a7a', marginBottom: 11 }}>Dimas Drajat selamatkan penalti, Timnas U-23 kalahkan Brunei</Text>
-              <TouchableOpacity style={{ backgroundColor: '#61a756', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius:4, textAlign: 'center',  }}>
+              <TouchableOpacity style={{ backgroundColor: '#61a756', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius: 4, textAlign: 'center', }}>
                 <Text style={{ fontSize: 13, fontWeight: 'bold', color: 'white' }}>READ</Text>
               </TouchableOpacity>
             </View>
           </View>
+          {/* Gofood Banner section */}
+          <View style={{ padding: 16 }}>
+            <View style={{ position: 'relative' }}>
+              <Image source={require('./assets/food-banner.jpg')} style={{ height: 170, width: '100%', borderRadius: 6 }} />
+              <View style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.15, borderRadius: 6 }}></View>
+              <View style={{ height: 15, width: 55, position: 'absolute', top: 16, left: 16 }}>
+                <Image source={require('./assets/white.png')} style={{ width: undefined, height: undefined, resizeMode: 'contain', flex: 1 }} />
+              </View>
+              <View style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingBottom: 16 }}>
+                <View>
+                  <Text style={{ fontSize: 18, fontWeight: 'bold', color: 'white', marginBottom: 8, marginTop: 3 }}>Free GO-FOOD voucher</Text>
+                  <Text style={{ fontSize: 12, fontWeight: "400", color: 'white' }}>Quick, before they run out!</Text>
+                </View>
+                <View style={{ flex: 1, paddingLeft: 12 }}>
+                  <TouchableOpacity style={{ backgroundColor: '#61a756', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'stretch', borderRadius: 4, textAlign: 'center', }}>
+                    <Text style={{ fontSize: 10, fontWeight: 'bold', color: 'white' }}>GET VOUCHER</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+            <View style={{ borderBottomColor: '#e8e9ed', borderBottomWidth: 1, marginBottom: 20, marginTop: 16 }}>
+            </View>
+          </View>
         </ScrollView>
         {/* Navbar */}
-        <View style={{ height: 54, flexDirection: 'row' }}>
+        <View style={{ height: 54, flexDirection: 'row', borderTopColor: '#e8e9ed', borderTopWidth: 1, }}>
           <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
             <Image style={{ width: 26, height: 26 }} source={require('./assets/home-active.png')} />
             <Text style={{ color: '#545454', fontSize: 10, marginTop: 4, color: '#43AB4A' }}>Home</Text>
