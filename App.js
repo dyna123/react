@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Text, StyleSheet, View, Image, TextInput } from 'react-native';
+import { Text, StyleSheet, View, Image, TextInput, ScrollView } from 'react-native';
 
 export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <View style={{ flex: 1 }}>
+        <ScrollView style={{ flex: 1 }}>
           {/* Search bar */}
           <View style={{ marginHorizontal: 17, flexDirection: 'row', paddingTop: 15 }}>
             <View style={{ position: 'relative', flex: 1 }}>
@@ -41,7 +41,6 @@ export default class App extends Component {
               </View>
             </View>
           </View>
-
           {/* Main Feature */}
           <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 18 }}>
             <View style={{ justifyContent: 'space-between', flexDirection: 'row', width: '100%', marginBottom: 18 }}>
@@ -97,7 +96,18 @@ export default class App extends Component {
               </View>
             </View>
           </View>
-        </View>
+          <View style={{ height: 17, backgroundColor: '#f2f2f4', marginTop: 20 }}></View>
+          {/* News Section */}
+          <View style={{ paddingTop: 16, paddingHorizontal: 16 }}>
+            <View>
+              <Image source={require('./assets/sepak-bola.jpg')} style={{ height: 170, width: '100%', borderRadius: 6 }} />
+            </View>
+            <View style={{ paddingTop: 16, paddingBottom: 20 }}>
+              <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c' }}>GO-NEWS</Text>
+              <Text style={{ fontSize: 14, fontWeight: 'normal', color: '#7a7a7a' }}>Dimas Drajat selamatkan penalti, Timnas U-23 kalahkan Brunei</Text>
+            </View>
+          </View>
+        </ScrollView>
         {/* Navbar */}
         <View style={{ height: 54, flexDirection: 'row' }}>
           <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
