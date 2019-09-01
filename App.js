@@ -96,7 +96,7 @@ export default class App extends Component {
               </View>
             </View>
           </View>
-          <View style={{ height: 17, backgroundColor: '#f2f2f4', }}></View>
+          <View style={{ height: 17, backgroundColor: '#f2f2f4', marginTop: 10 }}></View>
           {/* News Section */}
           <View style={{ paddingTop: 16, paddingHorizontal: 16 }}>
             <View style={{ position: 'relative' }}>
@@ -115,8 +115,8 @@ export default class App extends Component {
             </View>
           </View>
           {/* Gofood Banner section */}
-          <View style={{ padding: 16 }}>
-            <View style={{ position: 'relative', marginBottom: 20 }}>
+          <View style={{ paddingHorizontal: 16 }}>
+            <View style={{ position: 'relative' }}>
               <Image source={require('./assets/food-banner.jpg')} style={{ height: 170, width: '100%', borderRadius: 6 }} />
               <View style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.15, borderRadius: 6 }}></View>
               <View style={{ height: 15, width: 55, position: 'absolute', top: 16, left: 16 }}>
