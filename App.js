@@ -213,14 +213,14 @@ export default class App extends Component {
             <Text style={{ color: '#545454', fontSize: 10, marginTop: 4 }}>Orders</Text>
           </View>
           <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-            <Image style={{ width: 26, height: 26 }} source={require('./src/assets/help.png')} />
+            <Image style={{ width: 26, height: 26 }} source={require('./src/assets/icon/help.png')} />
             <Text style={{ color: '#545454', fontSize: 10, marginTop: 4 }}>Help</Text></View>
           <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-            <Image style={{ width: 26, height: 26 }} source={require('./src/assets/inbox.png')} />
+            <Image style={{ width: 26, height: 26 }} source={require('./src/assets/icon/inbox.png')} />
             <Text style={{ color: '#545454', fontSize: 10, marginTop: 4 }}>Inbox</Text>
           </View>
           <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-            <Image style={{ width: 26, height: 26 }} source={require('./src/assets/account.png')} />
+            <Image style={{ width: 26, height: 26 }} source={require('./src/assets/icon/account.png')} />
             <Text style={{ color: '#545454', fontSize: 10, marginTop: 4 }}>Account</Text>
           </View>
         </View>
