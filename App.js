@@ -159,7 +159,7 @@ export default class App extends Component {
           </View>
           {/* Nearby Go-food */}
           <View>
-            <View style={{ height: 15, width: 60, marginLeft: 16 }}>
+            <View style={{ height: 15, width: 60, marginLeft: 12 }}>
               <Image source={require('./assets/gojek.png')} style={{ width: undefined, height: undefined, resizeMode: 'contain', flex: 1 }} />
             </View>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16, paddingHorizontal: 16 }}>
@@ -175,7 +175,7 @@ export default class App extends Component {
               </View>
               <View style={{ marginRight: 16 }}>
                 <View style={{ width: 150, height: 150, borderRadius: 10 }}>
-                  <Image source={require('./assets/go-banka.jpg')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
+                  <Image source={require('./assets/go-food-banka.jpg')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
                 </View>
                 <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop: 12 }}>Martabak Bangka</Text>
               </View>
@@ -189,9 +189,9 @@ export default class App extends Component {
                 <View style={{ width: 150, height: 150, borderRadius: 10 }}>
                   <Image source={require('./assets/go-food-orins.jpg')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
                 </View>
-                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop: 12 }}>Orins</Text>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop: 12 }}>Martabak Orins</Text>
               </View>
-              <View style={{ marginRight: 16 }}>
+              <View style={{ marginRight: 16, paddingRight: 16 }}>
                 <View style={{ width: 150, height: 150, borderRadius: 10 }}>
                   <Image source={require('./assets/go-food-pak-boss.jpg')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
                 </View>
