@@ -114,6 +114,26 @@ export default class App extends Component {
               </TouchableOpacity>
             </View>
           </View>
+          {/* Internal Information */}
+          <View style={{ padding: 16, paddingTop: 0 }}>
+            <View style={{ height: 15, width: 60, marginLeft: -4 }}>
+              <Image source={require('./assets/gojek.png')} style={{ width: undefined, height: undefined, resizeMode: 'contain', flex: 1 }} />
+            </View>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#1c1c1c', marginTop: 15, marginBottom: 20 }}>Complete yout profile</Text>
+            <View style={{ flexDirection: "row", marginBottom: 16 }}>
+              <View>
+                <Image source={require('./assets/facebook-connect.png')} />
+              </View>
+              <View style={{ marginLeft: 16, flex: 1 }}>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#4a4a4a' }}>Connect with Facebook</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'normal', color: '#4a4a4a', width: '70%' }}>Login faster without veirfication code</Text>
+              </View>
+            </View>
+            <TouchableOpacity style={{ backgroundColor: '#61a756', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius: 4, textAlign: 'center' }}>
+              <Text style={{ fontSize: 10, fontWeight: 'bold', color: 'white' }}>CONNECT</Text>
+            </TouchableOpacity>
+            <View style={{ borderBottomColor: '#e8e9ed', borderBottomWidth: 1, marginTop: 16 }}></View>
+          </View>
           {/* Gofood Banner section */}
           <View style={{ paddingHorizontal: 16 }}>
             <View style={{ position: 'relative' }}>
@@ -136,6 +156,10 @@ export default class App extends Component {
             </View>
             <View style={{ borderBottomColor: '#e8e9ed', borderBottomWidth: 1, marginBottom: 20, marginTop: 16 }}>
             </View>
+          </View>
+          {/* Nearby Go-food */}
+          <View>
+            <Image source={require('./assets/go-food.png')} style={{ width: undefined, height: undefined, resizeMode: 'contain', flex: 1 }} />
           </View>
         </ScrollView>
         {/* Navbar */}
