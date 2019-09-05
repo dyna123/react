@@ -159,7 +159,47 @@ export default class App extends Component {
           </View>
           {/* Nearby Go-food */}
           <View>
-            <Image source={require('./assets/go-food.png')} style={{ width: undefined, height: undefined, resizeMode: 'contain', flex: 1 }} />
+            <View style={{ height: 15, width: 60, marginLeft: 16 }}>
+              <Image source={require('./assets/gojek.png')} style={{ width: undefined, height: undefined, resizeMode: 'contain', flex: 1 }} />
+            </View>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16, paddingHorizontal: 16 }}>
+              <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#1c1c1c' }}>Nearby Restaurant</Text>
+              <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#61a756' }}>See All</Text>
+            </View>
+            <ScrollView horizontal={true} style={{ flexDirection: 'row', paddingLeft: 16 }}>
+              <View style={{ marginRight: 16 }}>
+                <View style={{ width: 150, height: 150, borderRadius: 10 }}>
+                  <Image source={require('./assets/go-food-kfc.jpg')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
+                </View>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop: 12 }}>KFC Pajajaran</Text>
+              </View>
+              <View style={{ marginRight: 16 }}>
+                <View style={{ width: 150, height: 150, borderRadius: 10 }}>
+                  <Image source={require('./assets/go-banka.jpg')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
+                </View>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop: 12 }}>Martabak Bangka</Text>
+              </View>
+              <View style={{ marginRight: 16 }}>
+                <View style={{ width: 150, height: 150, borderRadius: 10 }}>
+                  <Image source={require('./assets/go-food-gm.jpg')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
+                </View>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop: 12 }}>Bakmi GM</Text>
+              </View>
+              <View style={{ marginRight: 16 }}>
+                <View style={{ width: 150, height: 150, borderRadius: 10 }}>
+                  <Image source={require('./assets/go-food-orins.jpg')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
+                </View>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop: 12 }}>Orins</Text>
+              </View>
+              <View style={{ marginRight: 16 }}>
+                <View style={{ width: 150, height: 150, borderRadius: 10 }}>
+                  <Image source={require('./assets/go-food-pak-boss.jpg')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
+                </View>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop: 12 }}>Pak Boss Chicken</Text>
+              </View>
+            </ScrollView>
+            <View style={{ borderBottomColor: '#e8e9ed', borderBottomWidth: 1, marginHorizontal: 16, marginBottom: 20, marginTop: 16 }}>
+            </View>
           </View>
         </ScrollView>
         {/* Navbar */}
