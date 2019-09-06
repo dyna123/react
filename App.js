@@ -8,29 +8,20 @@ import ScrollableProducts from './src/containers/organisms/ScrollableProducts/in
 import NavBar from './src/containers/organisms/NavBar/index.js';
 import HomeMainFeature from './src/containers/organisms/HomeMainFeature/index.js';
 import HomeGopay from './src/containers/organisms/HomeGopay/index.js';
-
 export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
         <ScrollView style={{ flex: 1 }}>
-          {/* Search bar */}
           <SearchFeature />
-          {/* gopay */}
           <HomeGopay />
-          {/* Main Feature */}
           <HomeMainFeature />
           <View style={{ height: 17, backgroundColor: '#f2f2f4', marginTop: 10 }}></View>
-          {/* News Section */}
           <GoNews />
-          {/* Internal Information */}
           <GoInfo />
-          {/* Gofood Banner section */}
           <GoBanner />
-          {/* Nearby Go-food */}
           <ScrollableProducts />
         </ScrollView>
-        {/* Navbar */}
         <NavBar />
       </View >
     );
