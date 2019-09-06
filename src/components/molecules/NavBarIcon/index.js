@@ -5,7 +5,7 @@ const NavBarIcon = (props) => {
     return (
         <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
             <Image style={{ width: 26, height: 26 }} source={props.img} />
-            <Text style={{ color: '#545454', fontSize: 10, marginTop: 4, color: '#43AB4A' }}>{props.title}</Text>
+            <Text style={{ color: '#545454', fontSize: 10, marginTop: 4, color: props.active ? '#43AB4A' : '#545454' }}>{props.title}</Text>
         </View>
     )
 }
